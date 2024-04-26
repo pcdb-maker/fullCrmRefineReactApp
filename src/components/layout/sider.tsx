@@ -72,6 +72,7 @@ export const Sider: React.FC = () => {
           >
             <SubMenu
               key={item.key}
+              // @ts-ignore
               icon={icon ?? <UnorderedListOutlined />}
               title={label}
             >
@@ -97,6 +98,7 @@ export const Sider: React.FC = () => {
         >
           <Menu.Item
             key={item.key}
+            // @ts-ignore
             icon={icon ?? (isRoute && <UnorderedListOutlined />)}
           >
             <Link to={route ?? ""}>{label}</Link>
@@ -182,6 +184,7 @@ export const Sider: React.FC = () => {
           style={drawerButtonStyles}
           size="large"
           onClick={() => setMobileSiderOpen(true)}
+          // @ts-ignore
           icon={<BarsOutlined />}
         />
       </>
@@ -228,12 +231,14 @@ export const Sider: React.FC = () => {
             }}
           >
             {siderCollapsed ? (
+              // @ts-ignore
               <RightOutlined
                 style={{
                   color: token.colorPrimary,
                 }}
               />
             ) : (
+              // @ts-ignore
               <LeftOutlined
                 style={{
                   color: token.colorPrimary,
