@@ -132,7 +132,7 @@ const UsersTable = () => {
       }}
       title={
         <Space size="middle">
-          <TeamOutlined />
+      
           <Text>Contacts</Text>
         </Space>
       }
@@ -150,6 +150,7 @@ const UsersTable = () => {
           dataIndex="name"
           title="Name"
           defaultFilteredValue={getDefaultFilter("name", filters, "contains")}
+          // @ts-ignore
           filterIcon={<SearchOutlined />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
@@ -179,6 +180,7 @@ const UsersTable = () => {
             filters,
             "contains",
           )}
+          // @ts-ignore
           filterIcon={<SearchOutlined />}
           filterDropdown={(props) => (
             <FilterDropdown {...props}>
@@ -213,21 +215,25 @@ const companyInfo = [
   {
     label: "Address",
     value: "2158 Mount Tabor, Westbury, New York, USA 11590",
+    // @ts-ignore
     icon: <EnvironmentOutlined className="tertiary" />,
   },
   {
     label: "Phone",
     value: "+123 456 789 01 23",
+    // @ts-ignore
     icon: <PhoneOutlined className="tertiary" />,
   },
   {
     label: "Email",
     value: "info@dundermifflin.com",
+    // @ts-ignore
     icon: <MailOutlined className="tertiary" />,
   },
   {
     label: "Website",
     value: "https://dundermifflin.com",
+    // @ts-ignore
     icon: <GlobalOutlined className="tertiary" />,
   },
 ];
@@ -237,7 +243,8 @@ export const CompanyInfo = () => {
     <Card
       title={
         <Space>
-          <ShopOutlined />
+         // @ts-ignore
+          
           <Text>Company info</Text>
         </Space>
       }
