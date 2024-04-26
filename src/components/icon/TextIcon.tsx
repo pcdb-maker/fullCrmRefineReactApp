@@ -28,5 +28,6 @@ export const TextIconSvg = () => (
 );
 
 export const TextIcon = (props: Partial<CustomIconComponentProps>) => (
+  // @ts-ignore
   <Icon component={TextIconSvg} {...props} />
 );
