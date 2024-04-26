@@ -81,7 +81,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
                 return saveSuccces?.();
               }
 
-              /
+              
               formValues.title = formValues.title.filter(
                 (title) => title !== undefined,
               );
