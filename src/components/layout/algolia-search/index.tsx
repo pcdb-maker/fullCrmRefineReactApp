@@ -53,6 +53,7 @@ export const AlgoliaSearch: React.FC = () => {
           className={styles.input}
           size="large"
           prefix={
+            // @ts-ignore
             <SearchOutlined
               className={cn(styles.inputPrefix, "secondary", "tertiary")}
             />
