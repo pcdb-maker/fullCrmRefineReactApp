@@ -104,7 +104,8 @@ export const Notifications: React.FC = () => {
       overlayStyle={{ width: 400 }}
     >
       <Badge dot>
-        <Button shape="circle" icon={<BellOutlined />} style={{ border: 0 }} />
+      
+        <Button shape="circle"  style={{ border: 0 }} />
       </Badge>
     </Popover>
   );
