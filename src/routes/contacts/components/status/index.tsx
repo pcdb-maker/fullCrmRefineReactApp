@@ -58,19 +58,24 @@ const LifecycleStage: React.FC<{ status: ContactStatusType }> = ({
   status,
 }) => {
   const stage = statusToStage(status as ContactStatusEnum);
+  // @ts-ignore
   let icon = <PlayCircleOutlined style={{ color: "#08979C" }} />;
 
   switch (status) {
     case ContactStatusEnum.WON:
+      // @ts-ignore
       icon = <CheckCircleFilled style={{ color: "#389E0D" }} />;
       break;
     case ContactStatusEnum.CHURNED:
+      // @ts-ignore
       icon = <MinusCircleFilled style={{ color: "#CF1322" }} />;
       break;
     case ContactStatusEnum.LOST:
+      // @ts-ignore
       icon = <PlayCircleFilled style={{ color: "#CF1322" }} />;
       break;
     case ContactStatusEnum.UNQUALIFIED:
+      // @ts-ignore
       icon = <PlayCircleOutlined style={{ color: "#CF1322" }} />;
       break;
     default:
@@ -177,7 +182,8 @@ export const ContactStatus: React.FC<ContactStatusProps> = ({ contact }) => {
               {status === ContactStatusEnum.UNQUALIFIED
                 ? "Unqualified"
                 : "Interested"}
-              <DownOutlined className={styles.arrow} />
+             
+             
             </a>
           </Dropdown>
         </li>
@@ -225,7 +231,8 @@ export const ContactStatus: React.FC<ContactStatusProps> = ({ contact }) => {
           >
             <a>
               {status === ContactStatusEnum.LOST ? "Lost" : "Negotiation"}
-              <DownOutlined className={styles.arrow} />
+              
+              
             </a>
           </Dropdown>
         </li>
@@ -260,7 +267,8 @@ export const ContactStatus: React.FC<ContactStatusProps> = ({ contact }) => {
           >
             <a>
               {status === ContactStatusEnum.CHURNED ? "Churned" : "Won"}
-              <DownOutlined className={styles.arrow} />
+              
+              
             </a>
           </Dropdown>
         </li>
