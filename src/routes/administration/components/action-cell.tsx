@@ -50,6 +50,7 @@ export const ActionCell = ({ record }: { record: Audit }) => {
       >
         <Button
           size="small"
+          // @ts-ignore
           icon={<ZoomInOutlined />}
           onClick={() => setOpened((prev) => !prev)}
         >
