@@ -20,27 +20,33 @@ export const ContactStatusTag: React.FC<{ status: ContactStatus }> = ({
     case "NEW":
     case "CONTACTED":
     case "INTERESTED":
+      // @ts-ignore
       icon = <PlayCircleOutlined />;
       color = "cyan";
       break;
     case "UNQUALIFIED":
+      // @ts-ignore
       icon = <PlayCircleOutlined />;
       color = "red";
       break;
     case "QUALIFIED":
     case "NEGOTIATION":
+      // @ts-ignore
       icon = <PlayCircleFilled />;
       color = "green";
       break;
     case "LOST":
+      // @ts-ignore
       icon = <PlayCircleFilled />;
       color = "red";
       break;
     case "WON":
+      // @ts-ignore
       icon = <CheckCircleOutlined />;
       color = "green";
       break;
     case "CHURNED":
+      // @ts-ignore
       icon = <MinusCircleOutlined />;
       color = "red";
       break;
