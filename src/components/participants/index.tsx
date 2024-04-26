@@ -29,14 +29,9 @@ export const Participants: FC<Props> = ({ userOne, userTwo }) => {
           name={userOne.name}
         />
       </Tooltip>
-      <PlusCircleOutlined className="xs tertiary" />
-      <Tooltip title={userTwo.name}>
-        <CustomAvatar
-          size="small"
-          src={userTwo.avatarUrl}
-          name={userTwo.name}
-        />
-      </Tooltip>
+      
+      
+     
     </Space>
   );
 };
