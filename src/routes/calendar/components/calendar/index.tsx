@@ -88,7 +88,7 @@ export const Calendar: React.FC<CalendarProps> = ({
               calendarRef.current?.getApi().prev();
             }}
             shape="circle"
-            // @ts-ignore
+           
             icon={<LeftOutlined />}
           />
           <Button
@@ -96,7 +96,7 @@ export const Calendar: React.FC<CalendarProps> = ({
               calendarRef.current?.getApi().next();
             }}
             shape="circle"
-            // @ts-ignore
+            
             icon={<RightOutlined />}
           />
           <Text className={styles.title} size="lg">
