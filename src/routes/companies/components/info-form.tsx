@@ -66,8 +66,11 @@ export const CompanyInfoForm = () => {
 
   return (
     <Card
+  
       title={
+        // @ts-ignore
         <Space size={15}>
+          /
           <ShopOutlined className="sm" />
           <Text>Company info</Text>
         </Space>
@@ -87,6 +90,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<ColumnWidthOutlined className="tertiary" />}
         state={getActiveForm({ formName: "companySize" })}
         itemProps={{
@@ -112,6 +116,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<DollarOutlined className="tertiary" />}
         state={getActiveForm({ formName: "totalRevenue" })}
         itemProps={{
@@ -139,6 +144,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<BankOutlined className="tertiary" />}
         state={getActiveForm({ formName: "industry" })}
         itemProps={{
@@ -164,6 +170,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<ApiOutlined className="tertiary" />}
         state={getActiveForm({ formName: "businessType" })}
         itemProps={{
@@ -189,6 +196,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<EnvironmentOutlined className="tertiary" />}
         state={getActiveForm({ formName: "country" })}
         itemProps={{
@@ -214,6 +222,7 @@ export const CompanyInfoForm = () => {
         style={{
           padding: "0.5rem 1rem",
         }}
+        // @ts-ignore
         icon={<EnvironmentOutlined className="tertiary" />}
         state={getActiveForm({ formName: "website" })}
         itemProps={{
