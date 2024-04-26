@@ -176,7 +176,7 @@ export const CompanyContactsTable: FC = () => {
                 </Space>
               );
             }}
-            // @ts-ignore
+           
             filterIcon={<SearchOutlined />}
             filterDropdown={(props) => (
               <FilterDropdown {...props}>
@@ -187,7 +187,7 @@ export const CompanyContactsTable: FC = () => {
           <Table.Column
             title="Title"
             dataIndex="jobTitle"
-            // @ts-ignore
+            
             filterIcon={<SearchOutlined />}
             filterDropdown={(props) => (
               <FilterDropdown {...props}>
@@ -221,13 +221,13 @@ export const CompanyContactsTable: FC = () => {
                   <Button
                     size="small"
                     href={`mailto:${record.email}`}
-                    // @ts-ignore
+                   
                     icon={<MailOutlined />}
                   />
                   <Button
                     size="small"
                     href={`tel:${record.phone}`}
-                    // @ts-ignore
+                   
                     icon={<PhoneOutlined />}
                   />
                   <ShowButton
@@ -235,7 +235,7 @@ export const CompanyContactsTable: FC = () => {
                     recordItemId={value}
                     size="small"
                     resource="contacts"
-                    // @ts-ignore
+                    
                     icon={<ExportOutlined />}
                   />
                 </Space>
@@ -337,7 +337,7 @@ const ContactForm = () => {
                         name={[name, "name"]}
                       >
                         <Input
-                        // @ts-ignore
+                      
                           addonBefore={<UserOutlined />}
                           placeholder="Contact name"
                         />
@@ -358,7 +358,7 @@ const ContactForm = () => {
                         name={[name, "email"]}
                       >
                         <Input
-                        // @ts-ignore
+                        
                           addonBefore={<MailOutlined />}
                           placeholder="Contact email"
                         />
@@ -366,7 +366,7 @@ const ContactForm = () => {
                     </Col>
                     <Col span={2}>
                       <Button
-                      // @ts-ignore
+                      
                         icon={<DeleteOutlined />}
                         onClick={() => remove(name)}
                       />
@@ -376,7 +376,7 @@ const ContactForm = () => {
               })}
               <Button
                 type="link"
-                // @ts-ignore
+              
                 icon={<PlusCircleOutlined />}
                 onClick={() => add()}
                 style={{
