@@ -10,7 +10,6 @@ type Props = PropsWithChildren<{
   setActive: (key?: string) => void;
   fallback: string | ReactNode;
   isLoading?: boolean;
-  icon: ReactNode;
   label: string;
 }>;
 
@@ -19,7 +18,6 @@ export const Accordion = ({
   activeKey,
   setActive,
   fallback,
-  icon,
   label,
   children,
   isLoading,
@@ -48,7 +46,7 @@ export const Accordion = ({
         borderBottom: "1px solid #d9d9d9",
       }}
     >
-      <div style={{ marginTop: "1px", flexShrink: 0 }}>{icon}</div>
+      <div style={{ marginTop: "1px", flexShrink: 0 }}></div>
       {isActive ? (
         <div
           style={{
