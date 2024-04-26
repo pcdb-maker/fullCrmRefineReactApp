@@ -25,6 +25,7 @@ export const ListTitleButton: FC<ListTitleButtonProps> = ({
   return (
     <Button
       type="primary"
+      // @ts-ignore
       icon={<PlusCircleOutlined />}
       onClick={() => {
         return go({
