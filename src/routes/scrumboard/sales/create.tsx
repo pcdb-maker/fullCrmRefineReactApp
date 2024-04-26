@@ -147,7 +147,8 @@ export const SalesCreatePage: FC<PropsWithChildren> = ({ children }) => {
             name="contactName"
             rules={[{ required: true }]}
           >
-            <Input addonBefore={<UserOutlined />} placeholder="Contact name" />
+          
+          
           </Form.Item>
         </Col>
         <Col span={12}>
@@ -156,7 +157,7 @@ export const SalesCreatePage: FC<PropsWithChildren> = ({ children }) => {
             name="contactEmail"
             rules={[{ required: true }]}
           >
-            <Input addonBefore={<MailOutlined />} placeholder="Contact email" />
+            
           </Form.Item>
         </Col>
       </Row>
@@ -229,7 +230,8 @@ export const SalesCreatePage: FC<PropsWithChildren> = ({ children }) => {
                   replace("company/create?to=/scrumboard/sales/create")
                 }
               >
-                <PlusCircleOutlined /> Add new company
+                
+               Add new company
               </Typography.Link>
             }
           >
@@ -274,6 +276,7 @@ export const SalesCreatePage: FC<PropsWithChildren> = ({ children }) => {
               >
                 <InputNumber
                   min={0}
+                  // @ts-ignore
                   addonBefore={<DollarOutlined />}
                   placeholder="0,00"
                   formatter={(value) =>
