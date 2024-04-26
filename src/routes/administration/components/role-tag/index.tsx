@@ -18,18 +18,22 @@ export const RoleTag: FC<Props> = ({ role }) => {
   } = {
     ADMIN: {
       color: "red",
+      // @ts-ignore
       icon: <CrownOutlined />,
     },
     SALES_INTERN: {
       color: "blue",
+      // @ts-ignore
       icon: <UserOutlined />,
     },
     SALES_PERSON: {
       color: "geekblue",
+      // @ts-ignore
       icon: <UserOutlined />,
     },
     SALES_MANAGER: {
       color: "cyan",
+      // @ts-ignore
       icon: <StarOutlined />,
     },
   };
