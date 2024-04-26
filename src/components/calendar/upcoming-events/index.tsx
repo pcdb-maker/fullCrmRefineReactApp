@@ -97,6 +97,7 @@ export const CalendarUpcomingEvents: React.FC<CalendarUpcomingEventsProps> = ({
 
   return (
     <Card
+    
       headStyle={{ padding: "8px 16px" }}
       bodyStyle={{
         padding: "0 1rem",
@@ -109,7 +110,7 @@ export const CalendarUpcomingEvents: React.FC<CalendarUpcomingEventsProps> = ({
             gap: "8px",
           }}
         >
-          <CalendarOutlined />
+         
           <Text size="sm" style={{ marginLeft: ".7rem" }}>
             Upcoming events
           </Text>
@@ -117,7 +118,7 @@ export const CalendarUpcomingEvents: React.FC<CalendarUpcomingEventsProps> = ({
       }
       extra={
         showGoToListButton && (
-          <Button onClick={() => list("events")} icon={<RightCircleOutlined />}>
+          <Button onClick={() => list("events")}>
             See calendar
           </Button>
         )
