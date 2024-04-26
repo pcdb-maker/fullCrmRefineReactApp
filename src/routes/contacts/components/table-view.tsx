@@ -97,6 +97,7 @@ export const TableView: React.FC<Props> = ({
             />
           </FilterDropdown>
         )}
+        // @ts-ignore
         render={(_, record: Contact) => {
           return <span>{record?.company.name}</span>;
         }}
@@ -140,6 +141,7 @@ export const TableView: React.FC<Props> = ({
             <Button
               size="small"
               href="tel:1234567890"
+              // @ts-ignore
               icon={<PhoneOutlined />}
             />
             <DeleteButton hideText size="small" recordItemId={record.id} />
