@@ -65,43 +65,21 @@ export const KanbanEditPage = () => {
         initialValues={{ completed: completed ?? false, stage }}
         isLoading={isLoading}
       />
+      
       <Accordion
         accordionKey="description"
         activeKey={activeKey}
         setActive={setActiveKey}
         fallback={<DescriptionHeader description={description} />}
         isLoading={isLoading}
-        icon={<AlignLeftOutlined />}
+     
         label="Description"
       >
         <DescriptionForm
           initialValues={{ description }}
           cancelForm={() => setActiveKey(undefined)}
         />
-      </Accordion>
-      <Accordion
-        accordionKey="due-date"
-        activeKey={activeKey}
-        setActive={setActiveKey}
-        fallback={<DueDateHeader dueData={dueDate} />}
-        isLoading={isLoading}
-        icon={<FieldTimeOutlined />}
-        label="Due date"
-      >
-        <DueDateForm
-          initialValues={{ dueDate: dueDate ?? undefined }}
-          cancelForm={() => setActiveKey(undefined)}
-        />
-      </Accordion>
-      <Accordion
-        accordionKey="users"
-        activeKey={activeKey}
-        setActive={setActiveKey}
-        fallback={<UsersHeader users={users} />}
-        isLoading={isLoading}
-        icon={<UsergroupAddOutlined />}
-        label="Users"
-      >
+      
         <UsersForm
           initialValues={{
             userIds: users?.map((user) => ({
