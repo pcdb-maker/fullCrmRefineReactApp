@@ -235,12 +235,14 @@ export const SalesPage: FC<PropsWithChildren> = ({ children }) => {
       {
         label: "Edit status",
         key: "1",
+        // @ts-ignore
         icon: <EditOutlined />,
         onClick: () => handleEditStage({ stageId: column.id }),
       },
       {
         label: "Clear all cards",
         key: "2",
+        // @ts-ignore
         icon: <ClearOutlined />,
         disabled: !hasItems,
         onClick: () =>
@@ -252,6 +254,7 @@ export const SalesPage: FC<PropsWithChildren> = ({ children }) => {
         danger: true,
         label: "Delete status",
         key: "3",
+        // @ts-ignore
         icon: <DeleteOutlined />,
         disabled: hasItems,
         onClick: () => handleDeleteStage({ stageId: column.id }),
