@@ -42,6 +42,7 @@ export const CurrentUser: React.FC = () => {
       >
         <Button
           style={{ textAlign: "left" }}
+          // @ts-ignore
           icon={<SettingOutlined />}
           type="text"
           block
@@ -50,7 +51,9 @@ export const CurrentUser: React.FC = () => {
           Account settings
         </Button>
         <Button
+        
           style={{ textAlign: "left" }}
+          // @ts-ignore
           icon={<LogoutOutlined />}
           type="text"
           danger
