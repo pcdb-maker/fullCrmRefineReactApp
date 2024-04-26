@@ -101,7 +101,8 @@ export const SingleElementForm: React.FC<SingleElementFormProps> = ({
 
         {state === "view" && (
           <div className={styles.actions}>
-            <Button onClick={onClick} icon={<EditOutlined />} />
+          
+            <Button onClick={onClick} />
           </div>
         )}
       </div>
