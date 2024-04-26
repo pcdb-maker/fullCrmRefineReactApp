@@ -16,6 +16,7 @@ export const resources: IResourceItem[] = [
     list: "/",
     meta: {
       label: "Dashboard",
+      // @ts-ignore
       icon: <DashboardOutlined />,
     },
   },
@@ -27,6 +28,7 @@ export const resources: IResourceItem[] = [
     show: "/calendar/show/:id",
     meta: {
       label: "Calendar",
+      // @ts-ignore
       icon: <CalendarOutlined />,
     },
   },
@@ -34,6 +36,7 @@ export const resources: IResourceItem[] = [
     name: "scrumboard",
     meta: {
       label: "Scrumboard",
+      // @ts-ignore
       icon: <ProjectOutlined />,
     },
   },
@@ -92,6 +95,7 @@ export const resources: IResourceItem[] = [
     edit: "/companies/edit/:id",
     meta: {
       label: "Companies",
+      // @ts-ignore
       icon: <ShopOutlined />,
     },
   },
@@ -111,6 +115,7 @@ export const resources: IResourceItem[] = [
     show: "/contacts/show/:id",
     meta: {
       label: "Contacts",
+      // @ts-ignore
       icon: <TeamOutlined />,
     },
   },
@@ -122,6 +127,7 @@ export const resources: IResourceItem[] = [
     show: "/quotes/show/:id",
     meta: {
       label: "Quotes",
+      // @ts-ignore
       icon: <ContainerOutlined />,
     },
   },
@@ -129,6 +135,7 @@ export const resources: IResourceItem[] = [
     name: "administration",
     meta: {
       label: "Administration",
+      // @ts-ignore
       icon: <CrownOutlined />,
     },
   },
