@@ -12,14 +12,17 @@ import { QuoteStatus } from "@/graphql/schema.types";
 const variant: Record<QuoteStatus, { color: string; icon: ReactElement }> = {
   DRAFT: {
     color: "blue",
+    // @ts-ignore
     icon: <ExpandOutlined />,
   },
   SENT: {
     color: "cyan",
+    // @ts-ignore
     icon: <SendOutlined />,
   },
   ACCEPTED: {
     color: "green",
+    // @ts-ignore
     icon: <CheckCircleOutlined />,
   },
 };
