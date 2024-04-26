@@ -130,6 +130,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
         <Text strong>Account Settings</Text>
         <Button
           type="text"
+          // @ts-ignore
           icon={<CloseOutlined />}
           onClick={() => closeModal()}
         />
@@ -164,6 +165,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
                 });
               },
               triggerType: ["text", "icon"],
+              // @ts-ignore
               icon: <EditOutlined className={styles.titleEditIcon} />,
             }}
           >
@@ -173,7 +175,8 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
         <Card
           title={
             <Space size={15}>
-              <UserOutlined />
+              
+              
               <Text size="sm">User profile</Text>
             </Space>
           }
@@ -189,7 +192,6 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
               },
             }}
             formProps={{ initialValues: { jobTitle } }}
-            icon={<IdcardOutlined className="tertiary" />}
             state={getActiveForm("jobTitle")}
             itemProps={{
               name: "jobTitle",
@@ -211,7 +213,6 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
               },
             }}
             formProps={{ initialValues: { phone } }}
-            icon={<PhoneOutlined className="tertiary" />}
             state={getActiveForm("phone")}
             itemProps={{
               name: "phone",
@@ -234,7 +235,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
             }}
             formProps={{ initialValues: { timezone } }}
             style={{ borderBottom: "none" }}
-            icon={<GlobalOutlined className="tertiary" />}
+            
             state={getActiveForm("timezone")}
             itemProps={{
               name: "timezone",
@@ -251,7 +252,7 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
         <Card
           title={
             <Space size={15}>
-              <SafetyCertificateOutlined />
+           
               <Text size="sm">Security</Text>
             </Space>
           }
@@ -267,7 +268,6 @@ export const AccountSettings = ({ opened, setOpened, userId }: Props) => {
               },
             }}
             formProps={{ initialValues: { email } }}
-            icon={<MailOutlined className="tertiary" />}
             state={getActiveForm("email")}
             itemProps={{
               name: "email",
