@@ -81,6 +81,7 @@ export const AuditLogPage = () => {
             dataIndex="user.name"
             title="User"
             width="15%"
+            // @ts-ignore
             filterIcon={<SearchOutlined />}
             render={(_, record: Audit) => {
               return (
