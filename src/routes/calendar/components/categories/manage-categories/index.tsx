@@ -35,6 +35,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
         title="Manage Categories"
         okText="Save"
         destroyOnClose
+        // @ts-ignore
         bodyStyle={{ paddingTop: "1rem" }}
         okButtonProps={{
           onClick: () => {
@@ -66,6 +67,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
               >
                 <Button
                   type="text"
+                  // @ts-ignore
                   icon={<DeleteOutlined className="tertiary" />}
                 />
               </Popconfirm>
@@ -121,6 +123,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
                           <Input
                             className={styles["new-category-input"]}
                             placeholder="Please enter category title"
+                            // @ts-ignore
                             bordered={false}
                           />
                         </Form.Item>
@@ -130,6 +133,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
                         onClick={() => {
                           remove(field.name);
                         }}
+                        // @ts-ignore
                         icon={<DeleteOutlined className="tertiary" />}
                       />
                     </div>
@@ -138,6 +142,7 @@ export const CalendarManageCategories: React.FC<CalendarManageCategoriesProps> =
                   <div className={styles.category}>
                     <Button
                       type="link"
+                      // @ts-ignore
                       icon={<PlusOutlined />}
                       onClick={() => {
                         add();
