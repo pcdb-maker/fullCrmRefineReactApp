@@ -37,7 +37,7 @@ export const CalendarCategories: React.FC<CalendarCategoriesProps> = ({
       <Card
         title={
           <span>
-            <FlagOutlined style={{ color: token.colorPrimary }} />
+           
             <Text size="sm" style={{ marginLeft: ".5rem" }}>
               Categories
             </Text>
@@ -47,7 +47,7 @@ export const CalendarCategories: React.FC<CalendarCategoriesProps> = ({
           <Button
             shape="circle"
             onClick={() => show()}
-            icon={<SettingOutlined />}
+           
           />
         }
         bodyStyle={{
