@@ -18,6 +18,10 @@ This project is a comprehensive Customer Relationship Management (CRM) system bu
 - **Backend Integration**: APIs to connect and manage customer data
 - **Deployment**: Vercel for hosting
 
+## Authentication
+
+- A email address and password will be auto generating upon clicking the link. 
+
 ## Usage
 
 The CRM system allows businesses to manage customer information, track leads, assign tasks, and monitor customer interactions from an organized and user-friendly interface. It is designed to be responsive, providing full functionality on both desktop and mobile devices.
